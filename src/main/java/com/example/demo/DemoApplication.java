@@ -18,7 +18,7 @@ public class DemoApplication {
 		return builder.routes()
 				.route(p -> p
 						.path("/project/**")
-						.uri("http://localhost:8083/"))
+						.uri("lb://project/"))
 				.build();
 	}
 }
